@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.mackodi.installer" name="Mackodi Installer" version="0.0.1" provider-name="Mackodi">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Installs the Mackodi configuration</summary>
+    <description lang="en_GB">A lightweight installer for the Mackodi build. Sets up advancedsettings.xml and required repositories.</description>
+    <platform>all</platform>
+  </extension>
+</addon>

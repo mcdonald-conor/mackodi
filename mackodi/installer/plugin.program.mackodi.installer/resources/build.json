@@ -1,0 +1,49 @@
+{
+  "name": "Mackodi",
+  "version": "1.0.0",
+  "codename": "Lite Baseline",
+  "base_url": "https://mcdonaldconor.github.io/mackodi/",
+  "repositories": [
+    {
+      "id": "repository.cocoscrapers",
+      "filename": "repository.cocoscrapers.zip",
+      "addons": ["script.module.cocoscrapers"]
+    },
+    {
+      "id": "repository.umbrella",
+      "filename": "repository.umbrella.zip",
+      "addons": ["plugin.video.umbrella"]
+    },
+    {
+      "id": "repository.magnetic",
+      "filename": "repository.magnetic.zip",
+      "addons": ["plugin.video.madtitansports"]
+    },
+    {
+      "id": "repository.loop",
+      "filename": "repository.loop.zip",
+      "addons": ["plugin.video.the-loop"]
+    }
+  ],
+  "direct_zips": [
+    "plugin.video.fenlight.zip"
+  ],
+  "configuration": {
+    "skin": "skin.estuary",
+    "required_files": [
+      "userdata/advancedsettings.xml",
+      "userdata/guisettings.xml",
+      "userdata/favourites.xml",
+      "userdata/splash.png"
+    ],
+    "addon_data": [
+      "plugin.video.fenlight",
+      "plugin.video.umbrella",
+      "plugin.video.youtube",
+      "plugin.video.madtitansports",
+      "plugin.video.the-loop",
+      "script.module.cocoscrapers",
+      "service.subtitles.a4ksubtitles"
+    ]
+  }
+}

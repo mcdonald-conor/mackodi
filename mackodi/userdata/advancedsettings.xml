@@ -1,0 +1,15 @@
+<advancedsettings>
+  <cache>
+    <buffermode>1</buffermode> <!-- Buffer all filesystems (including internet) -->
+    <memorysize>139460608</memorysize> <!-- ~133MB buffer size -->
+    <readfactor>4</readfactor> <!-- Moderate read factor -->
+  </cache>
+  <gui>
+    <algorithmdirtyregions>3</algorithmdirtyregions> <!-- Efficient rendering -->
+    <nofliptimeout>0</nofliptimeout>
+  </gui>
+  <videolibrary>
+    <importwatchedstate>true</importwatchedstate>
+    <importresumepoint>true</importresumepoint>
+  </videolibrary>
+</advancedsettings>
