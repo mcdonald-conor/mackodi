@@ -46,7 +46,7 @@ Before installing Mackodi, you need:
 1. Go to **Add-ons > Install from zip file**
 2. If prompted, allow unknown sources
 3. Select **.mackodi**
-4. Click on **plugin.program.mackodi.installer-0.0.1.zip**
+4. Click on **plugin.program.mackodi.installer-0.0.2.zip**
 5. Wait for the "Add-on installed" notification
 
 ### Step 4: Run the Installer
@@ -97,6 +97,8 @@ If you want to use your YouTube account:
 
 ### Sports Setup
 Mad Titan Sports and The Loop are pre-installed for UK football streaming. Just open them from the Sports section on the home menu.
+
+If streams require Real-Debrid authorization, open **ResolveURL** settings and authorize Real-Debrid there as well.
 
 ### Subtitles
 a4kSubtitles is pre-installed and will automatically search for subtitles when you play content. No configuration needed.
