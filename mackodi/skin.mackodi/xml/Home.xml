@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol>9000</defaultcontrol>
+	<backgroundcolor>background</backgroundcolor>
+	<controls>
+		<!-- Background -->
+		<control type="image">
+			<include>FullScreenDimensions</include>
+			<texture>colors/black.png</texture>
+		</control>
+		
+		<!-- Title -->
+		<control type="label">
+			<left>100</left>
+			<top>80</top>
+			<width>1720</width>
+			<height>80</height>
+			<font>font60</font>
+			<label>Mackodi</label>
+			<textcolor>FFCCCCCC</textcolor>
+			<align>center</align>
+		</control>
+		
+		<!-- Main Menu Grid -->
+		<control type="group">
+			<left>360</left>
+			<top>200</top>
+			<control type="grouplist" id="9000">
+				<orientation>horizontal</orientation>
+				<itemgap>60</itemgap>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<scrolltime>200</scrolltime>
+				
+				<!-- Movies Tile -->
+				<control type="button" id="100">
+					<width>300</width>
+					<height>300</height>
+					<label>Movies</label>
+					<font>font37</font>
+					<textcolor>FF888888</textcolor>
+					<focusedcolor>FFFFFFFF</focusedcolor>
+					<texturefocus border="20">dialogs/dialog-bg.png</texturefocus>
+					<texturenofocus border="20">dialogs/dialog-bg.png</texturenofocus>
+					<onclick>RunScript(script.skin.mackodi.helper,action=open_addon,addon=movies)</onclick>
+					<onlongclick>RunScript(script.skin.mackodi.helper,action=open_addon,addon=movies,backup)</onlongclick>
+					<onclick>Dialog.Close(all)</onclick>
+				</control>
+				
+				<!-- TV Shows Tile -->
+				<control type="button" id="101">
+					<width>300</width>
+					<height>300</height>
+					<label>TV Shows</label>
+					<font>font37</font>
+					<textcolor>FF888888</textcolor>
+					<focusedcolor>FFFFFFFF</focusedcolor>
+					<texturefocus border="20">dialogs/dialog-bg.png</texturefocus>
+					<texturenofocus border="20">dialogs/dialog-bg.png</texturenofocus>
+					<onclick>RunScript(script.skin.mackodi.helper,action=open_addon,addon=tvshows)</onclick>
+					<onlongclick>RunScript(script.skin.mackodi.helper,action=open_addon,addon=tvshows,backup)</onlongclick>
+					<onclick>Dialog.Close(all)</onclick>
+				</control>
+				
+				<!-- Sport Tile -->
+				<control type="button" id="102">
+					<width>300</width>
+					<height>300</height>
+					<label>Sport</label>
+					<font>font37</font>
+					<textcolor>FF888888</textcolor>
+					<focusedcolor>FFFFFFFF</focusedcolor>
+					<texturefocus border="20">dialogs/dialog-bg.png</texturefocus>
+					<texturenofocus border="20">dialogs/dialog-bg.png</texturenofocus>
+					<onclick>RunScript(script.skin.mackodi.helper,action=open_addon,addon=sport)</onclick>
+					<onlongclick>RunScript(script.skin.mackodi.helper,action=open_addon,addon=sport,backup)</onlongclick>
+					<onclick>Dialog.Close(all)</onclick>
+				</control>
+				
+				<!-- YouTube Tile -->
+				<control type="button" id="103">
+					<width>300</width>
+					<height>300</height>
+					<label>YouTube</label>
+					<font>font37</font>
+					<textcolor>FF888888</textcolor>
+					<focusedcolor>FFFFFFFF</focusedcolor>
+					<texturefocus border="20">dialogs/dialog-bg.png</texturefocus>
+					<texturenofocus border="20">dialogs/dialog-bg.png</texturenofocus>
+					<onclick>RunScript(script.skin.mackodi.helper,action=open_addon,addon=youtube)</onclick>
+					<onclick>Dialog.Close(all)</onclick>
+				</control>
+				
+				<!-- Settings Tile -->
+				<control type="button" id="104">
+					<width>300</width>
+					<height>300</height>
+					<label>Settings</label>
+					<font>font37</font>
+					<textcolor>FF888888</textcolor>
+					<focusedcolor>FFFFFFFF</focusedcolor>
+					<texturefocus border="20">dialogs/dialog-bg.png</texturefocus>
+					<texturenofocus border="20">dialogs/dialog-bg.png</texturenofocus>
+					<onclick>ActivateWindow(Settings)</onclick>
+				</control>
+			</control>
+		</control>
+		
+		<!-- Admin Button (only visible in admin mode) -->
+		<control type="button" id="200">
+			<left>1700</left>
+			<top>50</top>
+			<width>150</width>
+			<height>60</height>
+			<label>Admin</label>
+			<font>font14</font>
+			<textcolor>FF666666</textcolor>
+			<focusedcolor>FFFFFFFF</focusedcolor>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>RunScript(script.skin.mackodi.helper,action=admin)</onclick>
+			<visible>Skin.HasSetting(admin_mode)</visible>
+		</control>
+		
+		<!-- Info text at bottom -->
+		<control type="label">
+			<left>100</left>
+			<top>900</top>
+			<width>1720</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>Press BACK to return to this screen from any add-on</label>
+			<textcolor>FF666666</textcolor>
+			<align>center</align>
+		</control>
+	</controls>
+</window>

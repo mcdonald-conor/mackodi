@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="script.skin.mackodi.helper" name="Mackodi Skin Helper" version="1.0.0" provider-name="Mackodi">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Helper script for Mackodi skin</summary>
+		<description lang="en_GB">Handles add-on launching with fallback support and admin functions for the Mackodi skin.</description>
+		<platform>all</platform>
+	</extension>
+</addon>

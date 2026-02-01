@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol>9000</defaultcontrol>
+	<onback>ActivateWindow(Home)</onback>
+	<backgroundcolor>background</backgroundcolor>
+	<controls>
+		<control type="image">
+			<include>FullScreenDimensions</include>
+			<texture>colors/black.png</texture>
+		</control>
+
+		<control type="label">
+			<left>100</left>
+			<top>80</top>
+			<width>1720</width>
+			<height>60</height>
+			<font>font37</font>
+			<label>Skin Settings</label>
+			<textcolor>FFCCCCCC</textcolor>
+			<align>left</align>
+		</control>
+
+		<control type="grouplist" id="9000">
+			<left>100</left>
+			<top>170</top>
+			<width>1720</width>
+			<height>800</height>
+			<orientation>vertical</orientation>
+			<itemgap>14</itemgap>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<scrolltime>200</scrolltime>
+
+			<control type="radiobutton" id="9010">
+				<width>1720</width>
+				<height>70</height>
+				<label>Admin mode</label>
+				<font>font30</font>
+				<textcolor>FF888888</textcolor>
+				<focusedcolor>FFFFFFFF</focusedcolor>
+				<texturefocus border="12">dialogs/dialog-bg.png</texturefocus>
+				<texturenofocus border="12">dialogs/dialog-bg.png</texturenofocus>
+				<selected>Skin.HasSetting(admin_mode)</selected>
+				<onclick>Skin.ToggleSetting(admin_mode)</onclick>
+			</control>
+
+			<control type="radiobutton" id="9011">
+				<width>1720</width>
+				<height>70</height>
+				<label>Splash enabled</label>
+				<font>font30</font>
+				<textcolor>FF888888</textcolor>
+				<focusedcolor>FFFFFFFF</focusedcolor>
+				<texturefocus border="12">dialogs/dialog-bg.png</texturefocus>
+				<texturenofocus border="12">dialogs/dialog-bg.png</texturenofocus>
+				<selected>Skin.HasSetting(splash_enabled)</selected>
+				<onclick>Skin.ToggleSetting(splash_enabled)</onclick>
+			</control>
+
+			<control type="button" id="9020">
+				<width>1720</width>
+				<height>70</height>
+				<label>Movies add-on (primary)</label>
+				<label2>$INFO[Skin.String(movies_addon_primary)]</label2>
+				<font>font30</font>
+				<textcolor>FF888888</textcolor>
+				<focusedcolor>FFFFFFFF</focusedcolor>
+				<texturefocus border="12">dialogs/dialog-bg.png</texturefocus>
+				<texturenofocus border="12">dialogs/dialog-bg.png</texturenofocus>
+				<onclick>Skin.SetString(movies_addon_primary)</onclick>
+			</control>
+
+			<control type="button" id="9021">
+				<width>1720</width>
+				<height>70</height>
+				<label>Movies add-on (backup)</label>
+				<label2>$INFO[Skin.String(movies_addon_backup)]</label2>
+				<font>font30</font>
+				<textcolor>FF888888</textcolor>
+				<focusedcolor>FFFFFFFF</focusedcolor>
+				<texturefocus border="12">dialogs/dialog-bg.png</texturefocus>
+				<texturenofocus border="12">dialogs/dialog-bg.png</texturenofocus>
+				<onclick>Skin.SetString(movies_addon_backup)</onclick>
+			</control>
+
+			<control type="button" id="9030">
+				<width>1720</width>
+				<height>70</height>
+				<label>TV add-on (primary)</label>
+				<label2>$INFO[Skin.String(tv_addon_primary)]</label2>
+				<font>font30</font>
+				<textcolor>FF888888</textcolor>
+				<focusedcolor>FFFFFFFF</focusedcolor>
+				<texturefocus border="12">dialogs/dialog-bg.png</texturefocus>
+				<texturenofocus border="12">dialogs/dialog-bg.png</texturenofocus>
+				<onclick>Skin.SetString(tv_addon_primary)</onclick>
+			</control>
+
+			<control type="button" id="9031">
+				<width>1720</width>
+				<height>70</height>
+				<label>TV add-on (backup)</label>
+				<label2>$INFO[Skin.String(tv_addon_backup)]</label2>
+				<font>font30</font>
+				<textcolor>FF888888</textcolor>
+				<focusedcolor>FFFFFFFF</focusedcolor>
+				<texturefocus border="12">dialogs/dialog-bg.png</texturefocus>
+				<texturenofocus border="12">dialogs/dialog-bg.png</texturenofocus>
+				<onclick>Skin.SetString(tv_addon_backup)</onclick>
+			</control>
+
+			<control type="button" id="9040">
+				<width>1720</width>
+				<height>70</height>
+				<label>Sport add-on (primary)</label>
+				<label2>$INFO[Skin.String(sport_addon_primary)]</label2>
+				<font>font30</font>
+				<textcolor>FF888888</textcolor>
+				<focusedcolor>FFFFFFFF</focusedcolor>
+				<texturefocus border="12">dialogs/dialog-bg.png</texturefocus>
+				<texturenofocus border="12">dialogs/dialog-bg.png</texturenofocus>
+				<onclick>Skin.SetString(sport_addon_primary)</onclick>
+			</control>
+
+			<control type="button" id="9041">
+				<width>1720</width>
+				<height>70</height>
+				<label>Sport add-on (backup)</label>
+				<label2>$INFO[Skin.String(sport_addon_backup)]</label2>
+				<font>font30</font>
+				<textcolor>FF888888</textcolor>
+				<focusedcolor>FFFFFFFF</focusedcolor>
+				<texturefocus border="12">dialogs/dialog-bg.png</texturefocus>
+				<texturenofocus border="12">dialogs/dialog-bg.png</texturenofocus>
+				<onclick>Skin.SetString(sport_addon_backup)</onclick>
+			</control>
+		</control>
+
+		<control type="label">
+			<left>100</left>
+			<top>980</top>
+			<width>1720</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>Press BACK to return Home</label>
+			<textcolor>FF666666</textcolor>
+			<align>left</align>
+		</control>
+	</controls>
+</window>

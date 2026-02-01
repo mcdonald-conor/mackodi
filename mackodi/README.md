@@ -11,8 +11,8 @@ Mackodi is a pre-configured Kodi setup that takes the hassle out of setting up s
 **Key Features:**
 - **Pre-configured Addons:** Fen Light (primary), Umbrella (backup), YouTube, Mad Titan Sports, and a4kSubtitles
 - **Performance Tuned:** Optimized `advancedsettings.xml` for Firestick Lite's 1GB RAM
-- **Clean Interface:** No bloat, no widgets, no custom skins - just fast navigation
-- **Custom Splash Screen:** Mackodi branded startup screen
+- **Launcher Skin:** 5 large tiles (Movies, TV Shows, Sport, YouTube, Settings), no widgets
+- **Custom Splash Screen:** Uses the Mackodi logo on a plain dark screen
 - **Real Debrid Ready:** Pre-configured for premium streaming (you just need to authorize)
 
 ## Supported Devices
@@ -79,6 +79,14 @@ Before installing Mackodi, you need:
 
 ## Post-Installation Setup
 
+### Family Launcher Skin (Optional)
+If you want the custom launcher skin:
+1. Install `skin.mackodi-1.0.0.zip`
+2. Go to **Settings > Interface > Skin** and select **Mackodi**
+3. Open **Skin Settings** and set add-on IDs if yours differ
+
+**Splash logo:** The splash uses `media/logo.png` inside the skin folder. Replace it and re-zip if you want a different logo.
+
 ### YouTube Setup (Optional)
 If you want to use your YouTube account:
 1. Go to **Add-ons > Video add-ons > YouTube**
@@ -105,6 +113,7 @@ a4kSubtitles is pre-installed and will automatically search for subtitles when y
 
 **Other:**
 - YouTube
+- Family Launcher skin
 - Custom splash screen
 - Performance-tuned advancedsettings.xml
 - Pre-configured addon settings (quality limits, auto-play enabled)
@@ -112,7 +121,6 @@ a4kSubtitles is pre-installed and will automatically search for subtitles when y
 ## What's NOT Included
 
 - No maintenance tools or "cleaners"
-- No custom skins (uses default Estuary)
 - No widgets or animated menus
 - No IPTV (unless using sports addons)
 - No 4K support (Firestick Lite can't handle it)
