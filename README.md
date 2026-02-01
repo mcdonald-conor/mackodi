@@ -79,9 +79,11 @@ Before installing Mackodi, you need:
 
 ## Post-Installation Setup
 
-### Family Launcher Skin (Optional)
-If you want the custom launcher skin:
-1. Install `skin.mackodi-1.0.0.zip`
+### Family Launcher Skin
+The installer applies the Mackodi launcher skin automatically.
+
+If the skin does not load for any reason:
+1. Install `skin.mackodi-1.0.0.zip` from the same source
 2. Go to **Settings > Interface > Skin** and select **Mackodi**
 3. Open **Skin Settings** and set add-on IDs if yours differ
 

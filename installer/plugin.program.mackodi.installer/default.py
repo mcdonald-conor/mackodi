@@ -174,6 +174,11 @@ def run_installer():
         pDialog.update(percent, f"Restoring settings: {folder}...")
         install_addon_data(base_url, folder)
 
+    # 5. Switch to Mackodi skin
+    skin_id = build_data.get('configuration', {}).get('skin', 'skin.mackodi')
+    pDialog.update(95, f"Applying skin: {skin_id}...")
+    xbmc.executebuiltin(f'LoadSkin({skin_id})')
+
     pDialog.update(100, "Finalizing...")
     xbmc.sleep(1000)
     pDialog.close()
