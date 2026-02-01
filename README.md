@@ -42,14 +42,20 @@ Before installing Mackodi, you need:
 4. Name it: `.mackodi` (the dot makes it appear at the top)
 5. Click **OK**
 
-### Step 3: Install the Mackodi Installer
+### Step 3: Install the Mackodi Repository
 1. Go to **Add-ons > Install from zip file**
 2. If prompted, allow unknown sources
 3. Select **.mackodi**
-4. Click on **plugin.program.mackodi.installer-0.0.2.zip**
+4. Click on **repository.mackodi-1.0.0.zip**
 5. Wait for the "Add-on installed" notification
 
-### Step 4: Run the Installer
+### Step 4: Install the Mackodi Installer
+1. Go to **Add-ons > Install from repository**
+2. Select **Mackodi Repository**
+3. Go to **Program add-ons**
+4. Click **Mackodi Installer** and install
+
+### Step 5: Run the Installer
 1. Go to **Add-ons > Program add-ons > Mackodi Installer**
 2. Click **Run**
 3. Click **Yes** to confirm installation
@@ -58,7 +64,7 @@ Before installing Mackodi, you need:
 6. **Force close Kodi** (don't just exit - fully close the app)
 7. Reopen Kodi
 
-### Step 5: Authorize Real-Debrid (REQUIRED)
+### Step 6: Authorize Real-Debrid (REQUIRED)
 **IMPORTANT:** While Mackodi copies over addon settings, Real-Debrid authorization is device-specific and must be done manually.
 
 **For Fen Light (Primary):**
