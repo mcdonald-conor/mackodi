@@ -46,7 +46,7 @@ Before installing Mackodi, you need:
 1. Go to **Add-ons > Install from zip file**
 2. If prompted, allow unknown sources
 3. Select **.mackodi**
-4. Click on **repository.mackodi-1.0.2.zip**
+4. Click on **repository.mackodi-1.0.3.zip**
 5. Wait for the "Add-on installed" notification
 
 ### Step 4: Install the Mackodi Installer
