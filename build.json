@@ -6,29 +6,29 @@
   "repositories": [
     {
       "id": "repository.cocoscrapers",
-      "filename": "repository.cocoscrapers.zip",
+      "filename": "repository.cocoscrapers/repository.cocoscrapers.zip",
       "addons": ["script.module.cocoscrapers"]
     },
     {
       "id": "repository.umbrella",
-      "filename": "repository.umbrella.zip",
+      "filename": "repository.umbrella/repository.umbrella.zip",
       "addons": ["plugin.video.umbrella"]
     },
     {
       "id": "repository.magnetic",
-      "filename": "repository.magnetic.zip",
+      "filename": "repository.magnetic/repository.magnetic.zip",
       "addons": ["plugin.video.madtitansports"]
     },
     {
       "id": "repository.loop",
-      "filename": "repository.loop.zip",
+      "filename": "repository.loop/repository.loop.zip",
       "addons": ["plugin.video.the-loop"]
     }
   ],
   "direct_zips": [
-    "plugin.video.fenlight.zip",
-    "script.skin.mackodi.helper-1.0.0.zip",
-    "skin.mackodi-1.0.0.zip"
+    "plugin.video.fenlight/plugin.video.fenlight.zip",
+    "script.skin.mackodi.helper/script.skin.mackodi.helper-1.0.0.zip",
+    "skin.mackodi/skin.mackodi-1.0.0.zip"
   ],
   "configuration": {
     "skin": "skin.mackodi",

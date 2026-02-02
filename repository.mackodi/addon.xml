@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="repository.mackodi" name="Mackodi Repository" version="1.0.1" provider-name="Mackodi">
+<addon id="repository.mackodi" name="Mackodi Repository" version="1.0.2" provider-name="Mackodi">
 	<extension point="xbmc.addon.repository" name="Mackodi Repository">
-		<info compressed="false">https://mcdonald-conor.github.io/mackodi/repo/addons.xml</info>
-		<checksum>https://mcdonald-conor.github.io/mackodi/repo/addons.xml.md5</checksum>
+		<info compressed="true">https://mcdonald-conor.github.io/mackodi/repo/addons.xml.gz</info>
+		<checksum>https://mcdonald-conor.github.io/mackodi/repo/addons.xml.gz.md5</checksum>
 		<datadir zip="true">https://mcdonald-conor.github.io/mackodi/repo/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
