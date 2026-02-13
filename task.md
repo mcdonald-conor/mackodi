@@ -12,6 +12,7 @@ Mackodi should:
 - Support occasional UK football (sports) use
 - Avoid heavy skins, widgets, and maintenance gimmicks
 - Be reproducible, versioned, and remotely installable via repo/installer
+- Be add-on-first (Home items open add-ons, not Library views)
 
 This is not a flashy Kodi build — it is an engineered baseline.
 
@@ -21,7 +22,7 @@ This is not a flashy Kodi build — it is an engineered baseline.
 
 - **Device:** Amazon Firestick Lite (primary target)
 - **Future:** Must scale cleanly to Firestick 4K / 4K Max later
-- **Kodi Version:** Kodi 20.x (Nexus) OR 21.x (Omega) — choose one and standardise
+- **Kodi Version:** Kodi 21.x (Omega)
 - **Development Platform:** macOS (golden master build)
 - **Distribution:** GitHub Pages–hosted Kodi repo + installer
 
@@ -31,7 +32,7 @@ This is not a flashy Kodi build — it is an engineered baseline.
 
 - Convention over configuration
 - Performance > visuals
-- Estuary skin only (no custom skins in v1)
+- Estuary base or a lightweight Family Launcher skin (no heavy skins)
 - No animated widgets
 - No background services unless essential
 - Minimal addon surface area
@@ -59,6 +60,7 @@ Rules:
 - No widget rows
 - No hidden sections
 - All navigation reachable in ≤2 clicks
+- Items open add-ons directly (not Library views)
 
 ---
 
@@ -123,7 +125,7 @@ Explicitly excluded:
 ## Kodi Core Configuration
 
 ### Skin & UI
-- Skin: Estuary
+- Skin: Estuary base or Family Launcher (if implemented)
 - RSS feed disabled
 - Unused home sections removed
 - No background animations
@@ -139,6 +141,58 @@ Disable unless required:
 - Zeroconf
 - AirPlay
 - Remote control services
+
+---
+
+## Family Launcher Skin (Omega) Workstream
+
+Goal: a clean, dark, add-on-first launcher skin with large tiles for family use.
+
+### Scope
+- Fork Estuary into `skin.family.launcher` (lightweight only)
+- Home tiles: Movies, TV Shows, Sport, YouTube, Settings
+- Add-on-first navigation (no Library dependency)
+- Optional Admin mode for maintenance tasks
+
+### Add-on wiring (configurable IDs)
+- Movies/TV primary: `plugin.video.fenlight`
+- Movies/TV backup: `plugin.video.umbrella`
+- Sport primary: `plugin.video.madtitansports`
+- Sport backup: `plugin.video.theloop`
+- YouTube: `plugin.video.youtube`
+
+### Behavior
+- Normal click opens primary add-on root
+- Long-press opens backup add-on (if supported)
+- Missing add-on shows friendly dialog (no error spam)
+
+### Skin settings (editable in UI)
+- Admin mode toggle
+- Text settings for add-on IDs (primary/backup per section)
+- Splash toggle
+
+### Admin screen (only visible when Admin mode is ON)
+- Add-ons browser
+- File manager
+- System settings
+- Skin settings shortcut
+
+### Visual requirements
+- Dark theme, minimal animation, no widgets
+- Large tiles and labels (TV distance)
+- Clear focus state
+
+### Splash (optional)
+- Simple splash window with crest image
+- 1–2s delay then Home
+- Toggleable in Skin Settings
+
+Acceptance:
+- Skin selectable and stable on Kodi Omega
+- Home loads instantly; navigation is snappy
+- Tiles open primary add-ons; long-press opens backup
+- Missing add-ons show friendly dialog
+- Admin mode hides maintenance options by default
 
 ---
 
@@ -160,16 +214,17 @@ Treat this file as a first-class Mackodi artefact, not optional tuning.
 
 1. Install fresh Kodi on macOS
 2. Apply all Mackodi Kodi settings
-3. Install and configure all addons
-4. Authenticate Real Debrid and YouTube
-5. Configure addon defaults (auto-play, limits, etc.)
-6. Build and test full UX:
+3. If using Family Launcher, install and set the skin
+4. Install and configure all addons
+5. Authenticate Real Debrid and YouTube
+6. Configure addon defaults (auto-play, limits, etc.)
+7. Build and test full UX:
    - Cold start
    - Search → play
    - Resume playback
    - YouTube navigation
-7. Freeze configuration
-8. Export **minimal userdata only**
+8. Freeze configuration
+9. Export **minimal userdata only**
 
 Exclude:
 - Personal libraries
@@ -210,6 +265,10 @@ mackodi/
 │ └── repositorcy.makodi.zip
 ├── installer/
 │ └── plugin.progracm.makodi.installer
+├── skin/
+│ └── skin.family.launcher/
+├── skin-zips/
+│ └── skin.family.launcher-1.0.0.zip
 ├── userdata/
 │ ├── advancedsettings.xml
 │ ├── guisettings.xml
@@ -237,7 +296,7 @@ The README must:
 Mackodi v1.0.0 will NOT:
 - Compete with flashy Kodi builds
 - Support 20+ addons
-- Include custom skins
+- Include heavy/complex skins or widget frameworks
 - Include maintenance scripts
 - Auto-update everything
 - Require weekly rebuilds
@@ -249,7 +308,7 @@ Mackodi v1.0.0 will NOT:
 Mackodi v1.0.0 is complete when:
 - Runs smoothly on Firestick Lite
 - A non-technical user can install it remotely
-- Movies / TV / YouTube are one click away
+- Movies / TV / YouTube are one click away and open add-ons directly
 - Sports works when needed without clutter
 - No part of the UI feels slow or confusing
 - Updates are intentional, not reactive
