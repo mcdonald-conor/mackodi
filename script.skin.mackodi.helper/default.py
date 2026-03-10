@@ -52,8 +52,7 @@ def open_addon(addon_id, fallback_text=None):
         message = fallback_text or 'This section isn\'t installed yet.'
         xbmcgui.Dialog().ok(
             'Not installed',
-            message,
-            'Enable Admin mode to install it.'
+            f'{message}\nEnable Admin mode to install it.'
         )
         return False
     
