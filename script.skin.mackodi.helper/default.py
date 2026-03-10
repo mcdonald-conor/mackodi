@@ -9,7 +9,7 @@ ADDON = xbmcaddon.Addon()
 DEFAULT_ADDONS = {
     'movies': {'primary': 'plugin.video.fenlight', 'backup': 'plugin.video.umbrella'},
     'tvshows': {'primary': 'plugin.video.fenlight', 'backup': 'plugin.video.umbrella'},
-    'sport': {'primary': 'plugin.video.madtitansports', 'backup': 'plugin.video.theloop'},
+    'sport': {'primary': 'plugin.video.madtitansports', 'backup': None},
     'youtube': {'primary': 'plugin.video.youtube', 'backup': None}
 }
 

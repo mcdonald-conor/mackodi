@@ -18,17 +18,16 @@
       "id": "repository.magnetic",
       "filename": "repository.magnetic/repository.magnetic.zip",
       "addons": ["plugin.video.madtitansports"]
-    },
-    {
-      "id": "repository.loop",
-      "filename": "repository.loop/repository.loop.zip",
-      "addons": ["plugin.video.the-loop"]
     }
   ],
   "direct_zips": [
     "plugin.video.fenlight/plugin.video.fenlight.zip",
-    "script.skin.mackodi.helper/script.skin.mackodi.helper-1.0.0.zip",
-    "skin.mackodi/skin.mackodi-1.0.0.zip"
+    "script.skin.mackodi.helper/script.skin.mackodi.helper-1.0.1.zip",
+    "skin.mackodi/skin.mackodi-1.0.1.zip"
+  ],
+  "extra_addons": [
+    "plugin.video.youtube",
+    "service.subtitles.a4ksubtitles"
   ],
   "configuration": {
     "skin": "skin.mackodi",
@@ -43,7 +42,6 @@
       "plugin.video.umbrella",
       "plugin.video.youtube",
       "plugin.video.madtitansports",
-      "plugin.video.the-loop",
       "script.module.cocoscrapers",
       "service.subtitles.a4ksubtitles"
     ]

@@ -156,6 +156,7 @@ def run_installer():
     for repo in repos:
         if 'addons' in repo:
             all_addons.extend(repo['addons'])
+    all_addons.extend(build_data.get('extra_addons', []))
     
     for addon in all_addons:
         pDialog.update(35, f"Requesting install: {addon}...")

@@ -46,7 +46,7 @@ Before installing Mackodi, you need:
 1. Go to **Add-ons > Install from zip file**
 2. If prompted, allow unknown sources
 3. Select **.mackodi**
-4. Click on **repository.mackodi-1.0.3.zip**
+4. Click on **repository.mackodi-1.0.4.zip**
 5. Wait for the "Add-on installed" notification
 
 ### Step 4: Install the Mackodi Installer
@@ -89,7 +89,7 @@ Before installing Mackodi, you need:
 The installer applies the Mackodi launcher skin automatically.
 
 If the skin does not load for any reason:
-1. Install `skin.mackodi-1.0.0.zip` from the same source
+1. Install `skin.mackodi-1.0.1.zip` from the same source
 2. Go to **Settings > Interface > Skin** and select **Mackodi**
 3. Open **Skin Settings** and set add-on IDs if yours differ
 
@@ -102,7 +102,7 @@ If you want to use your YouTube account:
 3. Or use the default settings for no-login YouTube browsing
 
 ### Sports Setup
-Mad Titan Sports and The Loop are pre-installed for UK football streaming. Just open them from the Sports section on the home menu.
+Mad Titan Sports is pre-installed for UK football streaming. Just open it from the Sports section on the home menu.
 
 If streams require Real-Debrid authorization, open **ResolveURL** settings and authorize Real-Debrid there as well.
 
@@ -119,7 +119,6 @@ a4kSubtitles is pre-installed and will automatically search for subtitles when y
 
 **Sports:**
 - Mad Titan Sports
-- The Loop
 
 **Other:**
 - YouTube
