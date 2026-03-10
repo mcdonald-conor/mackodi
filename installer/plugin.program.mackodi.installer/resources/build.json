@@ -2,7 +2,7 @@
   "name": "Mackodi",
   "version": "1.0.0",
   "codename": "Lite Baseline",
-  "base_url": "https://mcdonaldconor.github.io/mackodi/",
+  "base_url": "https://mcdonald-conor.github.io/mackodi/",
   "repositories": [
     {
       "id": "repository.cocoscrapers",
