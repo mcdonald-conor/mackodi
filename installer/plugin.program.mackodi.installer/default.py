@@ -130,7 +130,10 @@ def install_config_file(base_url, filepath):
     filename = os.path.basename(filepath)
     # Special handling for splash.png location vs others
     if filename == 'splash.png':
-        dest = os.path.join(USERDATA_PATH, 'splash.png')
+        media_dir = os.path.join(USERDATA_PATH, 'media')
+        if not os.path.exists(media_dir):
+            os.makedirs(media_dir)
+        dest = os.path.join(media_dir, 'Splash.png')
     else:
         dest = os.path.join(USERDATA_PATH, filename)
         
@@ -246,6 +249,8 @@ def run_installer():
     pDialog.update(95, f"Applying skin: {skin_id}...")
     if has_addon(skin_id) or wait_for_addon(skin_id, timeout=60):
         xbmc.executebuiltin(f'LoadSkin({skin_id})')
+        xbmc.sleep(1000)
+        xbmc.executebuiltin('Skin.SetBool(splash_enabled)')
     else:
         failed_addons.append(skin_id)
 
