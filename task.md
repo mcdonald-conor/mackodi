@@ -234,6 +234,32 @@ Exclude:
 
 ---
 
+## Repo Publishing Notes (Keep This Working)
+
+These are required to avoid repo install/update failures:
+
+- Always bump the repository add-on version in `repository.mackodi/addon.xml` and regenerate the repo zip.
+- Update `repo/addons.xml` and regenerate `repo/addons.xml.gz` on every change.
+- Regenerate and publish `repo/addons.xml.md5` and `repo/addons.xml.gz.md5` after every change.
+- Ensure GitHub Pages serves these exact URLs without redirect or 404:
+  - `https://mcdonald-conor.github.io/mackodi/repo/addons.xml`
+  - `https://mcdonald-conor.github.io/mackodi/repo/addons.xml.md5`
+  - `https://mcdonald-conor.github.io/mackodi/repo/addons.xml.gz`
+  - `https://mcdonald-conor.github.io/mackodi/repo/addons.xml.gz.md5`
+- The repository add-on must point `datadir` at `https://mcdonald-conor.github.io/mackodi/repo/zips/` and that path must contain the addon zips referenced by `repo/addons.xml`.
+
+---
+
+## Installer Expectations (Required Behavior)
+
+The Mackodi Installer must be fully hands-off for addons:
+
+- Install required repos and direct zips, then install all required addons.
+- Wait for addon install completion and report any failures at the end.
+- Apply userdata files and addon_data after addons are installed.
+
+---
+
 ## Packaging Strategy
 
 ### Versioning
